@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.food-section {
+    box-sizing: border-box;
+    width: 31%; /* Adjust based on required spacing */
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    padding: 15px;
+    position: relative;
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FF5733;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 25px;
+    border: 1px solid #000;
+}
+
+@media (max-width: 991px) {
+    .food-section {
+        width: 48%;
+    }
+}
+
+@media (max-width: 767px) {
+    .food-section {
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+}
